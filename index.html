@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF Sensitivity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">⚡ FF <span>SENSI</span></div>
+    <button id="themeBtn">☀️</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="badge">🎯 أداة مجانية</div>
+      <h1>أفضل حساسية<br><span>لـ Free Fire</span></h1>
+      <p>
+        اختر جهازك ونوع اللعب للحصول على إعدادات حساسية مناسبة.
+      </p>
+    </section>
+
+    <section class="card">
+
+      <label>📱 اختر جهازك</label>
+
+      <select id="device">
+        <option value="">-- اختر الجهاز --</option>
+        <option value="samsung">Samsung</option>
+        <option value="xiaomi">Xiaomi</option>
+        <option value="iphone">iPhone</option>
+        <option value="oppo">OPPO</option>
+        <option value="realme">Realme</option>
+        <option value="other">جهاز آخر</option>
+      </select>
+
+      <label>🎮 نوع الحساسية</label>
+
+      <div class="modes">
+        <button class="mode active" data-mode="balanced">
+          ⚖️ متوازنة
+        </button>
+
+        <button class="mode" data-mode="fast">
+          ⚡ سريعة
+        </button>
+
+        <button class="mode" data-mode="low">
+          🎯 منخفضة
+        </button>
+      </div>
+
+      <button class="generate" id="generate">
+        🔥 إنشاء الحساسية
+      </button>
+
+    </section>
+
+    <section class="result hidden" id="result">
+
+      <h2>🎯 إعدادات الحساسية</h2>
+
+      <div class="settings">
+
+        <div class="setting">
+          <span>General</span>
+          <strong id="general">--</strong>
+        </div>
+
+        <div class="setting">
+          <span>Red Dot</span>
+          <strong id="redDot">--</strong>
+        </div>
+
+        <div class="setting">
+          <span>2X Scope</span>
+          <strong id="scope2">--</strong>
+        </div>
+
+        <div class="setting">
+          <span>4X Scope</span>
+          <strong id="scope4">--</strong>
+        </div>
+
+        <div class="setting">
+          <span>Sniper</span>
+          <strong id="sniper">--</strong>
+        </div>
+
+        <div class="setting">
+          <span>Free Look</span>
+          <strong id="freeLook">--</strong>
+        </div>
+
+      </div>
+
+      <button class="copy" id="copyBtn">
+        📋 نسخ الإعدادات
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 FF SENSI — تصميم تجريبي</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
